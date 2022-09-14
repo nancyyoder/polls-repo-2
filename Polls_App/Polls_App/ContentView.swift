@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack{
+                  RoundedRectangle(cornerRadius: 20).fill(.blue).padding(EdgeInsets(top: 150, leading: 30, bottom: 150, trailing: 30))
+                  VStack{
+                      Text("cats?").font(.title2).padding()
+                      HStack{
+                          Image(systemName: "hand.thumbsup")
+                          Image(systemName: "hand.thumbsdown")
+                      }
+                      
+                  }
+                  
+              }
     }
 }
 
